@@ -3,7 +3,6 @@
  */
 "use client";
 import { ThemeProvider, Button, Theme } from "@material-tailwind/react";
-
 export { ThemeProvider, Button };
 
 /*

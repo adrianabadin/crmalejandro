@@ -1,23 +1,10 @@
 "use client";
-//import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Metadata } from "next";
-import { envSchema } from "../../entities/ZodSchemas/env";
 import { TanstackProvider } from "../../components/providers/TanstackProvider";
-import { MaterialProvider, ThemeProvider } from "../../components/Provider";
-//envSchema.parse(process.env);
-//texto agregado
-console.log(process.env.NEXT_PUBLIC_BACKENDURL);
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import { MaterialProvider } from "../../components/Provider";
+import { HeaderBanner } from "../../components/Header/Banner";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+//console.log(process.env.NEXT_PUBLIC_BACKENDURL);
 
 // export const metadata: Metadata = {
 //   title: "CRM",
@@ -29,11 +16,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
+      <head>
+        <title>ADrian</title>
+      </head>
       <TanstackProvider>
-        <body
-          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        >
+        <body>
+          <HeaderBanner />
           <MaterialProvider>{children}</MaterialProvider>
         </body>
       </TanstackProvider>
