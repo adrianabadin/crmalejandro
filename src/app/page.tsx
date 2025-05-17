@@ -1,14 +1,14 @@
 "use client";
 import Image from "next/image";
 import { useAbility } from "../../hooks/useAbility";
-import { Button } from "@material-tailwind/react";
+import { Button, Spinner } from "@material-tailwind/react";
 export default function Home() {
   const { data: cosa, isLoading, isError, error } = useAbility(0);
-  if (isLoading) return <div>is Loading...</div>;
+  if (isLoading) return <Spinner size="xl" color="secondary" />;
   if (isError) return <div>Errror {error.message}</div>;
   console.log(cosa, "adad");
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="grid font-sans grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 ">
       <Button variant="solid" color="primary">
         Adrian2
       </Button>

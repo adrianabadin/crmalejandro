@@ -1,6 +1,10 @@
+/*imports material tailwind configuration */
 @config "../../tailwind.config.ts";
+/* imports roboto font from google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/*imports tailwind classes*/
 @import "tailwindcss";
-/*@config "../../tailwind.config.ts"*/
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -11,11 +15,15 @@
   --background: #ffffff;
   --foreground: #171717;
 }
-
+/*Theme Config*/
 @theme inline {
+  --color-*: initial;
+  --color-primary: #106ebe;
+  --color-secondary: #0ffcbe;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-*: initial;
+  --font-sans: "Roboto", sans-serif;
   --font-mono: var(--font-geist-mono);
 }
 
