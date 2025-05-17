@@ -1,10 +1,5 @@
-/*imports material tailwind configuration */
 @config "../../tailwind.config.ts";
-/* imports roboto font from google fonts*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-/*imports tailwind classes*/
 @import "tailwindcss";
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -16,7 +11,7 @@
   --foreground: #171717;
 }
 /*Theme Config*/
-@theme inline {
+/* @theme inline {
   --color-*: initial;
   --color-primary: #106ebe;
   --color-secondary: #0ffcbe;
@@ -32,7 +27,7 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);

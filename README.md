@@ -26,6 +26,7 @@ docker compose -f docker-compose-dev.yml up --build
 
 ## Implementation
 The implementation for the Form States Should be througth React Hook Form Library. But Before its mandatory to create the validation Scheme for zod that is going to handle the form validation and the Type Safety of the Frontend.
+The UI Components Library By choice is Material Tailwind its already config to work with Next JS 
 
 ## Routing
 Next Page Router is enabled, so you should build a directory structure and inside it place page.tsx files for each route in the site. 
@@ -42,3 +43,4 @@ Here you build every error message by extending the error class using a uniform 
 
 ## Entities Folder
 In here we must define types, classes and validation Schemas to be handled in the rest of the code base 
+

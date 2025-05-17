@@ -1,9 +1,6 @@
-"use client";
-import "./globals.css";
 import { TanstackProvider } from "../../components/providers/TanstackProvider";
-import { MaterialProvider } from "../../components/Provider";
 import { HeaderBanner } from "../../components/Header/Banner";
-
+import "./globals.css";
 //console.log(process.env.NEXT_PUBLIC_BACKENDURL);
 
 // export const metadata: Metadata = {
@@ -23,7 +20,7 @@ export default function RootLayout({
       <TanstackProvider>
         <body>
           <HeaderBanner />
-          <MaterialProvider>{children}</MaterialProvider>
+          {children}
         </body>
       </TanstackProvider>
     </html>
